@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>sliderScript</title>
+	<link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+	<div class="slider">
+		<div class="main" id="template_main">
+			<div class="main-i" id="main_{{index}}">
+				<img src="images/{{index}}.jpg" alt="">
+				<div class="caption">
+					<h2>{{h2}}</h2>
+					<h3>{{h3}}</h3>
+				</div>
+			</div>
+		</div>
+		<div class="ctrl" id="template_ctrl">
+			<a href="javascript:switchSlider({{index}})" class="ctrl-i" id="ctrl_{{index}}"><img src="images/{{index}}.jpg" alt=""></a>
+		</div>
+	</div>
+	<script src="js/js.js"></script>
+</body>
+</html>
